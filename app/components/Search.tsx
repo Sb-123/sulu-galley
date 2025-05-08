@@ -14,8 +14,6 @@ export default function Search() {
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         router.push(`/results/${search}`)
-        setSearch('')
-
     }
     return (
         <form className="flex justify-center md:justify-between " onSubmit={handleSubmit} >
